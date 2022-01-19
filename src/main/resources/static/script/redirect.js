@@ -48,4 +48,25 @@ function show(page) {
 
 		event.preventDefault();
 	}
+	if (page == "reservations") {
+		$('a').removeClass('active');
+		$('a:contains(Reservations)').addClass('active');
+		$("#main-content").load("page/reservation.html");
+		event.preventDefault();
+   
+   }
+if (page == "reservations2") {
+		$('a').removeClass('active');
+		$('a:contains(Reservations2)').addClass('active');
+		$("#main-content").load("page/reservation2.html");
+		event.preventDefault();
+   
+   }
+	if (page == 'produit') {
+		$('a').removeClass('active');
+		$('a:contains(Produit)').addClass('active');
+		$("#main-content").load("page/produit.html");
+		event.preventDefault();
+	}
+
 }

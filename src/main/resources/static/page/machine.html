@@ -1,8 +1,8 @@
 <script src="script/machine.js" type="text/javascript"></script>
-<div class="container-fluid">
-    <div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div  class="container-fluid">
+    <div style="height:1000px" class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div style="height:1000px" class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Erreur</h5>
@@ -16,8 +16,8 @@
             </div>
         </div>
     </div>
-    <div class="card bg-white">
-        <div class="card-header card-color">
+    <div style="height:800px" class="card bg-white">
+        <div style="background-color:brown ;"  class="card-header card-color">
             <p class="h2 text-center text-uppercase font-weight-bold pt-2">Gestion des machines</p>
         </div>
         <div class="card-body container-fluid">
@@ -29,6 +29,7 @@
                 </div>
                 <div class="col-sm-6 mb-2">
                     <label for="dateAchat">Date Achat : </label>
+                    <input class="" type="date" id="id" hidden>
                     <input class="form-control" type="date" id="dateAchat" required>
                 </div>
                 </div>
@@ -45,11 +46,8 @@
                      	<option value="0">choisir une option</option>
                      </select>
              </div>
-                
-            </div>
-                   <div class="row">
-                <div class="col-sm-6 mb-2">
-                    <label for="salle">salle : </label>
+             <div class="col-sm-6 mb-2">
+                    <label for="salle">Salle : </label>
                      <select  class="form-control"  id="salle" name="salle">
                      	<option value="0">choisir une option</option>
                      </select>
@@ -59,21 +57,24 @@
            
             <div class="row">
                 <div class="col">
-                    <button type="button" class="btn btn-outline-success mt-3 mb-3" id="btn">Ajouter</button>
+                    <button style="float:right; background-color: brown; color:white;border-color: brown;" type="button" class="btn btn-outline-success mt-3 mb-3" id="btn">Ajouter</button>
                 </div>
             </div>
+            <br>
+            <hr >
+            <br>
             <div class="row table-responsive m-auto rounded">
                 <table id="tmachine" class="table table-hover w-100">
                     <thead>
-                        <tr class="text-uppercase bg-light  w-100">
-                            <th scope="col">Id</th>
-                            <th scope="col">Reference</th>
-                            <th scope="col">Date Achat</th>
-                            <th scope="col">Prix</th>
-                            <th scope="col">Marque</th>
-                            <th scope="col">salle</th>
-                            <th scope="col">Supprimer</th>
-                            <th scope="col">Modifier</th>
+                        <tr  class="text-uppercase bg-light  w-100">
+                            <th style="background-color:brown; color:white" scope="col">Id</th>
+                            <th style="background-color:brown; color:white" scope="col">Reference</th>
+                            <th style="background-color:brown; color:white" scope="col">Date Achat</th>
+                            <th style="background-color:brown; color:white" scope="col">Prix</th>
+                            <th style="background-color:brown; color:white" scope="col">Marque</th>
+                            <th style="background-color:brown; color:white" scope="col">Salle</th>
+                            <th  style="background-color:brown; color:white" scope="col">Supprimer</th>
+                            <thstyle="background-color:brown" scope="col">Modifier</th>
                         </tr>
                     </thead>
                     <tbody id="table-content">
